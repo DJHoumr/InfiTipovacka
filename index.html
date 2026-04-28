@@ -19,7 +19,7 @@
     if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("/pwabuilder-sw.js") // Název souboru, který jste nahráli na Vercel
+      .register("/public/pwabuilder-sw.js") // Název souboru, který jste nahráli na Vercel
       .then((reg) => console.log("Service Worker zaregistrován!", reg))
       .catch((err) => console.log("Registrace selhala:", err));
   });
